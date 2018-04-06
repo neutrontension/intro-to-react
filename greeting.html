@@ -5,7 +5,36 @@
   </head>
 
   <body>
-    <p>Hello world!</p>
+    <!-- Declaring a container for UI -->
+    <div id="app"></div>
+    <!-- Loading three libraries: react, react-dom, and babel-core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <!-- Using text/babel format to enable ES6. Babel is a JS compiler that
+    allows us to use the latest gen of JS. -->
+    <script type="text/babel">
+       //React component called Greeting. Every component has a render()
+       //method which returns HTML to render.
+       class Greeting extends React.Component {
+         render() {
+           return (
+             <div>
+              //Returning this when UI opens. In order to display, we must
+              //call ReactDOM.render() with the component we want to render
+              //as the first argument. The second argument is the HTML element
+              //in which to render our component.
+              <h1>Hello World!</h1>
+             </div>
+           );
+         }
+       }
+
+       ReactDOM.render(
+         //Component, followed by HTML element in which to render our component.
+         <Greeting />, document.getElementById('app')
+       );
+    </script>
   </body>
 
 </html>
