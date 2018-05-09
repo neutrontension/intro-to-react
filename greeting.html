@@ -14,14 +14,14 @@
     <!-- Using text/babel format to enable ES6. Babel is a JS compiler that
     allows us to use the latest gen of JS. -->
     <script type="text/babel">
-       /* React component called Greeting. Every component has a render()
-       method which returns HTML to render. */
+       {/* React component called Greeting. Every component has a render()
+       method which returns HTML to render. */}
        class Greeting extends React.Component {
          render() {
-           /* Returning this when UI opens. In order to display, we must
+           {/* Returning this when UI opens. In order to display, we must
            call ReactDOM.render() with the component we want to render
            as the first argument. The second argument is the HTML element
-           in which to render our component. */
+           in which to render our component. */}
            return (
              <div>
               <h1>Hello World!</h1>
@@ -31,7 +31,7 @@
        }
 
        ReactDOM.render(
-         /* Component, followed by HTML element in which to render our component. */
+         {/* Component, followed by HTML element in which to render our component. */}
          <Greeting />, document.getElementById('app')
        );
     </script>
