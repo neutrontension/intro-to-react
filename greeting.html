@@ -24,15 +24,15 @@
            in which to render our component. */}
            return (
              <div>
-              <h1>Hello World!</h1>
+              <h1>Hello {this.props.name}!</h1>
              </div>
            );
          }
        }
 
        ReactDOM.render(
-         {/* Component, followed by HTML element in which to render our component. */}
-         <Greeting />, document.getElementById('app')
+         /* Component, followed by HTML element in which to render our component. */
+         <Greeting name="Bloc Student"/>, document.getElementById('app')
        );
     </script>
   </body>
